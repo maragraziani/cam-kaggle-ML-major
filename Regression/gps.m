@@ -41,7 +41,7 @@ for i =1:400
         test(ind(i),j) = randn*s2_test(i) + mu_test(i);
     end
     test(ind(i),7) = randn*std(data(:,7)) + mean(data(:,7));
-    test(ind(i),7) = randn*std(data(:,11)) + mean(data(:,11));
+    test(ind(i),11) = randn*std(data(:,11)) + mean(data(:,11));
 end
 
 x_t = (test(:,1)-mean_1)/std_1;
