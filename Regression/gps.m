@@ -8,7 +8,7 @@ ind = find(isnan(test(:,2)) == 1);
 x_full = zscore(data(:,1)); mean_1 = mean(data(:,1)); std_1 = std(data(:,1));
 y_full = data(:,2);
 
-x_test = (test(ind,1)-mean_1)/std_1;
+x_test = (test(ind,1)-mean_1)/std_1
 
 train_ind = randperm(s,34200,1500);
 x = x_full(train_ind);
